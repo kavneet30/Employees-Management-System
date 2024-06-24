@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Management System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class = "main">
+        
+        <div class = "heading">
+            <h1>Employees Management System</h1>
+        </div>
+        <div class = "btn">
+            <button class = "btn btn-info"><a href = "/view_emp">View All Employees</a></button>
+            <button class = "btn btn-info"><a href = "/add_emp">Add the Employees</a></button>
+            <button class = "btn btn-info"><a href = "/remove_emp">Remove the Employees</a></button>
+            <button class = "btn btn-info"><a href = "/filter_emp">Filter the Employees</a></button>
+        
+        </div>
+        <div class = "box">
+        </div>
+    </div>
+</body>
+</html>

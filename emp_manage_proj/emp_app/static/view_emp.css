@@ -1,0 +1,51 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    background-image: url(https://static1.gensler.com/uploads/hero_element/20772/thumb_desktop/thumbs/221201_US-Workplace-Survey_1_1669939238_1024x576.jpg);
+    background-size: max(1900px,100vw);
+    background-position: center center;
+    width: 208vh;
+    height: 110vh;
+    position: relative;
+    
+
+}
+.box{
+    opacity: 0.8;
+    background-color: black;
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+}
+table{
+    color: white;
+    position: relative;
+    z-index: 9;
+}
+table{
+    padding: 30px 30px;
+    margin: auto;
+    color: rgb(115, 225, 232);
+}
+.heading{
+    color: rgb(115, 225, 232);
+    position: relative;
+    z-index: 9;
+    max-width: 10vh;
+    margin: auto;
+    display: inline;
+    text-align: center;
+    padding: 8px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}

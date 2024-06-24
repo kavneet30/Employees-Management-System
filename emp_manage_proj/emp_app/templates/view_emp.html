@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Employees</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'view_emp.css' %}">
+</head>
+<body>
+    <div class = "main">
+        <div class = "heading">
+            <h1>ALL EMPLOYEES DETAILS</h1>
+        </div>
+        <table  border = "5" cellpadding = "10" width= "80%">
+            <tr style="border: 8px solid white">
+                <th style="border: 5px solid white" width = "100vh" height = "40vh" >S.No</th>
+                <th style="border: 5px solid white" width = "100vh" height = "40vh">First_Name</th>
+                <th style="border: 5px solid white" width = "100vh" height = "40vh" >Last_Name</th>
+                <th style="border: 5px solid white" >Department</th>
+                <th style="border: 5px solid white" >Location</th>
+                <th style="border: 5px solid white" >Role</th>
+                <th style="border: 5px solid white" >Salary</th>
+                <th style="border: 5px solid white" >Bonus</th>
+                <th style="border: 5px solid white" >Phone_No</th>
+                <th style="border: 5px solid white" >Hiring_Date</th>
+            </tr>
+                {% for emp in emps %}
+            <tr style="border: 1px solid white" width = "50vh" height = "35vh">
+                <td style="border: 3px solid white" >{{emp.id}}</td>
+                <td style="border: 3px solid white" >{{emp.first_name}}</td>
+                <td style="border: 3px solid white" >{{emp.last_name}}</td>
+                <td style="border: 3px solid white" >{{emp.dept.name}}</td>
+                <td style="border: 3px solid white" >{{emp.dept.location}}</td>
+                <td style="border: 3px solid white" >{{emp.role.name}}</td>
+                <td style="border: 3px solid white" >{{emp.salary}}</td>
+                <td style="border: 3px solid white" >{{emp.bonus}}</td>
+                <td style="border: 3px solid white" >{{emp.phone_no}}</td>
+                <td style="border: 3px solid white" >{{emp.hiring_date}}</td>
+            </tr>
+                {% endfor %}
+        </table>
+        <div class = "box">
+        </div>
+    </div>
+    
+</body>
+</html>

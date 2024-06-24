@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add the Employees</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'add_emp.css' %}">
+</head>
+<body>
+    <div class = "main">
+        <div class = "heading">
+            <h1>ADD THE EMPLOYEE DETAILS</h1>
+        </div>
+        <form  method = "post">
+            {% csrf_token %}
+            <label for = "first_name">First Name</label>
+            <input type = "text" placeholder="First name" name = "first_name" value = {{first_name}}>
+            <label for = "last_name">Last Name</label>
+            <input type = "text" placeholder="Last name" name = "last_name" value = {{last_name}}>
+            <label for = "dept">Department</label>
+            <input type = "number" placeholder="Department" name = "dept" value = {{dept}}>
+            <label for = "role">Role</label>
+            <input type = "number" placeholder="Role" name = "role" value = {{role}}>
+            <label for = "salary">Salary</label>
+            <input type = "number" placeholder="Salary" name = "salary" value = {{salary}}>
+            <label for = "bonus">Bonus</label>
+            <input type = "number" placeholder="Bonus" name = "bonus" value = {{bonus}}>
+            <label for = "phone_no">Phone No.</label>
+            <input type = "number" placeholder="Phone no." name = "phone_no" value = {{phone_no}}>
+            <button type = "submit">Submit</button>
+        </form>
+
+        <div class = "box">
+        </div>
+    </div>
+</body>
+</html>

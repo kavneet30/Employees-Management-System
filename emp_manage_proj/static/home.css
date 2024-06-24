@@ -1,0 +1,64 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    background-image: url(https://static1.gensler.com/uploads/hero_element/20772/thumb_desktop/thumbs/221201_US-Workplace-Survey_1_1669939238_1024x576.jpg);
+    background-size: max(1900px,100vw);
+    background-position: center center;
+    width: 208vh;
+    height: 110vh;
+    position: relative;
+    
+
+}
+.box{
+    opacity: 0.8;
+    background-color: black;
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+}
+.heading{
+    max-width: 50vh;
+    margin: auto;
+    position: relative;
+    z-index: 9;
+    color: rgb(115, 225, 232);
+    font-size: 30px;
+    text-align: center;
+    padding: 90px 10px;
+    display: inline;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+    max-width: 50vh;
+    margin:30px auto;
+    position: relative;
+    z-index: 9;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    font-size:24px;
+    background-color: transparent;
+    border: 1px solid rgb(25, 215, 228);
+    border-radius: 9px;
+}
+.btn a{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.btn :hover{
+    color: red;
+}
